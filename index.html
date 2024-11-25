@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas de Amor</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Huellitas de Amor</h1>
+        </div>
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slider-1" src="Image/bungee.jpeg" alt="">
+                <img id="slider-2" src="Image/doggie.jpeg" alt="">
+                <img id="slider-3" src="Image/descarga (1).jpeg" alt="">
+                <img id="slider-4" src="Image/descarga (2).jpeg" alt="">
+            </div>
+            <div class="slider-nav">
+                <a href="#slider-1"></a>
+                <a href="#slider-2"></a>
+                <a href="#slider-3"></a>
+                <a href="#slider-4"></a>
+            </div>
+        </div>
+    </header>
+
+   
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="mostrarSeccion('inicio')">Inicio</a></li>
+            <li><a href="#" onclick="mostrarSeccion('galeria')">Galería</a></li>
+            <li class="dropdown">
+                <a href="#">Adoptar</a>
+                <ul class="dropdown-content">
+                    <li><a href="#" onclick="mostrarSeccion('urgencia')">Perritos en Urgencia</a></li>
+                    <li><a href="#" onclick="mostrarSeccion('largaEstadia')">Perritos de Larga Estadía</a></li>
+                    <li><a href="#" onclick="mostrarSeccion('especiales')">Perritos Especiales</a></li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="mostrarSeccion('soporte')">Soporte</a></li>
+            <li><a href="#" onclick="mostrarSeccion('acerca')">Acerca de</a></li>
+        </ul>
+    </nav>
+
+    <div id="contenido">
+        <section id="inicio">
+            <h2>Bienvenido a la Página de Adopción</h2>
+            <p>Estamos dedicados a encontrar un hogar amoroso para cada perrito.</p>
+        </section>
+
+        <section id="galeria" style="display: none;">
+            <h2>Galería</h2>
+            <p>Mira las fotos de los perritos que buscan un hogar.</p>
+
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slider-1" src="Image/bungee.jpeg" alt="">
+                        <img id="slider-2" src="Image/doggie.jpeg" alt="">
+                        <img id="slider-3" src="Image/descarga (1).jpeg" alt="">
+                        <img id="slider-4" src="Image/descarga (2).jpeg" alt="">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slider-1"></a>
+                        <a href="#slider-2"></a>
+                        <a href="#slider-3"></a>
+                        <a href="#slider-4"></a>
+                    </div>
+                </div>
+                
+        </section>
+
+        <section id="urgencia" style="display: none;">
+            <h2>Perritos en Urgencia</h2>
+            <p>Estos perritos necesitan ser adoptados con prioridad debido a situaciones especiales.</p>
+        </section>
+
+        <section id="largaEstadia" style="display: none;">
+            <h2>Perritos de Larga Estadía</h2>
+            <p>Estos perritos han estado con nosotros por más tiempo y merecen una oportunidad para encontrar su hogar definitivo.</p>
+        </section>
+
+        <section id="especiales" style="display: none;">
+            <h2>Perritos Especiales</h2>
+            <p>Estos perritos tienen condiciones o necesidades especiales y buscan un hogar adecuado para ellos.</p>
+        </section>
+
+        <section id="soporte" style="display: none;">
+            <h2>Soporte</h2>
+            <p>Contáctanos si tienes dudas sobre el proceso de adopción.</p>
+        </section>
+
+        <section id="acerca" style="display: none;">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos una organización dedicada a ayudar a los perritos a encontrar una familia amorosa.</p>
+        </section>
+    </div>
+
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
